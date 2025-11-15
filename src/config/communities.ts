@@ -6,25 +6,23 @@ import { Community } from '../types';
  */
 export const communities: Community[] = [
   {
-    id: 'wagmi-defi',
-    name: 'Wagmi DeFi',
+    id: 'wagmi-crypto-community',
+    name: 'WAGMI - Crypto Community',
     chatId: '-1002074466991',
-    description: 'Community principale DeFi di Wagmi-Lab',
-    emoji: '💎',
+    description: 'Crypto Community',
+    emoji: '🌐',
     links: {
-      telegram: 'https://t.me/wagmi_defi',
-      website: 'https://wagmi-lab.io',
-      twitter: 'https://twitter.com/wagmi_lab',
-      docs: 'https://docs.wagmi-lab.io',
+      telegram: 'https://t.me/Wagmi_community',
+      website: 'https://wagmi-lab.com',
     },
     scheduledMessages: [
       {
         id: 'daily-morning',
-        communityId: 'wagmi-defi',
+        communityId: 'wagmi-crypto-community',
         cronExpression: '0 9 * * *', // Every day at 9:00 AM
         messages: [
-          '🌅 Buongiorno Wagmi Family!\n\nIniziamo la giornata con energia! 💪\n\n📊 Resta aggiornato sulle ultime novità DeFi\n🔗 [Visita il nostro sito](https://wagmi-lab.io)',
-          '☀️ Good morning!\n\nUn nuovo giorno, nuove opportunità nel mondo DeFi! 🚀\n\n💡 Continua a imparare e crescere con noi\n🔗 [Documentazione](https://docs.wagmi-lab.io)',
+          '🌅 *Buongiorno Crypto Community!*\n\nIniziamo la giornata con le ultime news crypto! 💪\n\n📊 Resta aggiornato sul mercato\n🔗 [Visita il sito](https://wagmi-lab.com)',
+          '☀️ *Good morning Crypto Fam!*\n\nUn nuovo giorno, nuove opportunità nel mondo crypto! 🚀\n\n💡 Stay informed, stay ahead\n🔗 [Website](https://wagmi-lab.com)',
         ],
         currentIndex: 0,
         enabled: true,
@@ -33,51 +31,26 @@ export const communities: Community[] = [
     enabled: true,
   },
   {
-    id: 'wagmi-nft',
-    name: 'Wagmi NFT',
+    id: 'wagmi-trading-club',
+    name: 'WAGMI - Trading Club',
     chatId: '', // Add your chat ID here
-    description: 'Community NFT e Digital Art',
-    emoji: '🎨',
+    description: 'Trading Club',
+    emoji: '📈',
     links: {
-      telegram: 'https://t.me/wagmi_nft',
-      website: 'https://wagmi-lab.io/nft',
-      twitter: 'https://twitter.com/wagmi_lab',
+      telegram: 'https://t.me/+GoDQ-tcq99UyMDk0',
+      website: 'https://wagmi-lab.com',
     },
     scheduledMessages: [
       {
-        id: 'weekly-recap',
-        communityId: 'wagmi-nft',
-        cronExpression: '0 18 * * 5', // Every Friday at 6:00 PM
+        id: 'market-analysis',
+        communityId: 'wagmi-trading-club',
+        cronExpression: '0 8 * * 1-5', // Every weekday at 8:00 AM
         messages: [
-          '🎨 Weekly NFT Recap!\n\nÈ tempo di fare il punto della settimana! 📊\n\n✨ Nuove collezioni\n🔥 Trending artists\n\n🔗 [Scopri di più](https://wagmi-lab.io/nft)',
+          '📈 *Buongiorno Traders!*\n\nPronti per una nuova giornata di trading! 💼\n\n📊 Analisi di mercato in arrivo\n🔗 [Trading Club](https://wagmi-lab.com)',
+          '💹 *Morning Trading Alert!*\n\nMarkets are opening, stay sharp! ⚡\n\n📉 Monitor your positions\n🔗 [Join us](https://wagmi-lab.com)',
         ],
         currentIndex: 0,
-        enabled: true,
-      },
-    ],
-    enabled: true,
-  },
-  {
-    id: 'wagmi-dev',
-    name: 'Wagmi Developers',
-    chatId: '', // Add your chat ID here
-    description: 'Community per sviluppatori e builders',
-    emoji: '⚡',
-    links: {
-      telegram: 'https://t.me/wagmi_dev',
-      github: 'https://github.com/wagmi-lab',
-      docs: 'https://docs.wagmi-lab.io/developers',
-    },
-    scheduledMessages: [
-      {
-        id: 'tech-tuesday',
-        communityId: 'wagmi-dev',
-        cronExpression: '0 15 * * 2', // Every Tuesday at 3:00 PM
-        messages: [
-          '👨‍💻 Tech Tuesday!\n\nOggi parliamo di sviluppo e innovazione! 🚀\n\n📚 [Documentazione tecnica](https://docs.wagmi-lab.io/developers)\n💻 [GitHub](https://github.com/wagmi-lab)',
-        ],
-        currentIndex: 0,
-        enabled: true,
+        enabled: false, // Disabled until Chat ID is configured
       },
     ],
     enabled: true,

@@ -100,11 +100,18 @@ export class SchedulerService {
       const messageIndex = scheduledMessage.currentIndex % scheduledMessage.messages.length;
       const messageText = scheduledMessage.messages[messageIndex];
 
-      // Send message to community
-      await this.bot.telegram.sendMessage(community.chatId, messageText, {
+      // Send message to community (with topic support)
+      const sendOptions: any = {
         parse_mode: 'Markdown',
         link_preview_options: { is_disabled: false },
-      });
+      };
+
+      // Add message_thread_id if this is a forum topic
+      if (community.messageThreadId) {
+        sendOptions.message_thread_id = community.messageThreadId;
+      }
+
+      await this.bot.telegram.sendMessage(community.chatId, messageText, sendOptions);
 
       // Update current index for next rotation
       scheduledMessage.currentIndex =

@@ -6,6 +6,7 @@ export interface Community {
   id: string;
   name: string;
   chatId: string;
+  messageThreadId?: number; // For forum topics
   description: string;
   emoji: string;
   links: CommunityLinks;
