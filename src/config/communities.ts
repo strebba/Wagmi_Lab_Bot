@@ -8,7 +8,7 @@ export const communities: Community[] = [
   {
     id: 'wagmi-defi',
     name: 'Wagmi DeFi',
-    chatId: '', // Add your chat ID here
+    chatId: '-1002074466991',
     description: 'Community principale DeFi di Wagmi-Lab',
     emoji: '💎',
     links: {
